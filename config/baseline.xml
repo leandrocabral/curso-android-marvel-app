@@ -2,6 +2,9 @@
 <SmellBaseline>
   <ManuallySuppressedIssues></ManuallySuppressedIssues>
   <CurrentIssues>
+    <ID>NewLineAtEndOfFile:AboutFragment.kt$com.example.marvelapp.presentation.about.AboutFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:CharactersFragment.kt$com.example.marvelapp.presentation.characters.CharactersFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:FavoritesFragment.kt$com.example.marvelapp.presentation.favorites.FavoritesFragment.kt</ID>
     <ID>NewLineAtEndOfFile:MainActivity.kt$com.example.marvelapp.presentation.MainActivity.kt</ID>
   </CurrentIssues>
 </SmellBaseline>
