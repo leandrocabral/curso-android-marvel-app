@@ -6,5 +6,6 @@
     <ID>NewLineAtEndOfFile:CharactersFragment.kt$com.example.marvelapp.presentation.characters.CharactersFragment.kt</ID>
     <ID>NewLineAtEndOfFile:FavoritesFragment.kt$com.example.marvelapp.presentation.favorites.FavoritesFragment.kt</ID>
     <ID>NewLineAtEndOfFile:MainActivity.kt$com.example.marvelapp.presentation.MainActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:MarvelApp.kt$com.example.marvelapp.MarvelApp.kt</ID>
   </CurrentIssues>
 </SmellBaseline>
