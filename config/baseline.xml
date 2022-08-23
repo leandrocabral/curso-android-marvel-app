@@ -4,11 +4,11 @@
   <CurrentIssues>
     <ID>MagicNumber:NetworkModule.kt$NetworkModule$15</ID>
     <ID>NewLineAtEndOfFile:AboutFragment.kt$com.example.marvelapp.presentation.about.AboutFragment.kt</ID>
-    <ID>NewLineAtEndOfFile:AuthorizationInterceptor.kt$com.example.core.data.network.interceptor.AuthorizationInterceptor.kt</ID>
+    <ID>NewLineAtEndOfFile:AuthorizationInterceptor.kt$com.example.marvelapp.framework.network.interceptor.AuthorizationInterceptor.kt</ID>
     <ID>NewLineAtEndOfFile:CharactersFragment.kt$com.example.marvelapp.presentation.characters.CharactersFragment.kt</ID>
     <ID>NewLineAtEndOfFile:FavoritesFragment.kt$com.example.marvelapp.presentation.favorites.FavoritesFragment.kt</ID>
     <ID>NewLineAtEndOfFile:MainActivity.kt$com.example.marvelapp.presentation.MainActivity.kt</ID>
-    <ID>NewLineAtEndOfFile:MarvelApi.kt$com.example.core.data.network.MarvelApi.kt</ID>
+    <ID>NewLineAtEndOfFile:MarvelApi.kt$com.example.marvelapp.framework.network.MarvelApi.kt</ID>
     <ID>NewLineAtEndOfFile:MarvelApp.kt$com.example.marvelapp.MarvelApp.kt</ID>
     <ID>NewLineAtEndOfFile:NetworkModule.kt$com.example.marvelapp.framework.di.NetworkModule.kt</ID>
     <ID>UnusedPrivateMember:NetworkModule.kt$NetworkModule$authorizationInterceptor: AuthorizationInterceptor</ID>
