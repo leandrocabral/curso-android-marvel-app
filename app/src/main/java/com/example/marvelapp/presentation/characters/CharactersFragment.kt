@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.load.engine.Engine
@@ -27,7 +29,7 @@ class CharactersFragment : Fragment() {
 
     private val viewModel: CharactersViewModel by viewModels()
 
-    private val characterAdapter = CharacterAdapter()
+    private lateinit var characterAdapter: CharacterAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,14 +48,16 @@ class CharactersFragment : Fragment() {
         observerInitialLoadState()
 
         lifecycleScope.launch {
-            viewModel.charactersPagingData("").collect { pagingData ->
-                characterAdapter.submitData(pagingData)
-
+            viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.charactersPagingData("").collect { pagingData ->
+                    characterAdapter.submitData(pagingData)
+                }
             }
         }
     }
 
     private fun initCharacterAdapter() {
+        characterAdapter = CharacterAdapter()
         with(binding.recyclerCharacter) {
             setHasFixedSize(true)
             adapter = characterAdapter
@@ -75,7 +79,14 @@ class CharactersFragment : Fragment() {
                         FLIPPER_CHILD_CHARACTERS
                     }
 
-                    is LoadState.Error -> FLIPPER_CHILD_ERROR
+                    is LoadState.Error -> {
+                        setShimmerVisibility(false)
+                        binding.includeViewCharactersErrorState.buttonTryAgain
+                            .setOnClickListener {
+                                characterAdapter.refresh()
+                            }
+                        FLIPPER_CHILD_ERROR
+                    }
                 }
             }
         }

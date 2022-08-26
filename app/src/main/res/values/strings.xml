@@ -34,4 +34,7 @@
     <string name="about_screen_title">About</string>
     <string name="about_attribution">Data provided by Marvel. © 2021 Marvel</string>
 
+    <!-- Error -->
+    <string name="error_loading_characters">Error ao carregar heróis</string>
+
 </resources>
