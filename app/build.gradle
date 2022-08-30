@@ -102,10 +102,6 @@ dependencies {
     implementation "androidx.datastore:datastore-preferences:1.0.0-rc02"
 
     // Unit tests
-    testImplementation 'junit:junit:4.13.1'
-    testImplementation "androidx.arch.core:core-testing:2.1.0"
-    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2'
-    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
     testImplementation "androidx.room:room-testing:$room_version"
 
     // Instrumentation tests
@@ -113,4 +109,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(':core')
+    implementation project(':testing')
 }

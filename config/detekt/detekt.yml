@@ -349,7 +349,7 @@ formatting:
     active: true
     autoCorrect: true
   NoWildcardImports:
-    active: true
+    active: false
   PackageName:
     active: true
     autoCorrect: true
@@ -453,7 +453,7 @@ naming:
     excludes: ['**/*.kts']
     rootPackage: ''
   MatchingDeclarationName:
-    active: true
+    active: false
     mustBeFirst: true
   MemberNameEqualsClassName:
     active: true
@@ -679,7 +679,7 @@ style:
     active: false
   MaxLineLength:
     active: true
-    maxLineLength: 120
+    maxLineLength: 500
     excludePackageStatements: true
     excludeImportStatements: true
     excludeCommentStatements: false
@@ -791,7 +791,7 @@ style:
   VarCouldBeVal:
     active: true
   WildcardImport:
-    active: true
+    active: false
     excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/jsTest/**', '**/iosTest/**']
     excludeImports:
       - 'java.util.*'
