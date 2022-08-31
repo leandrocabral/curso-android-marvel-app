@@ -5,7 +5,7 @@ import com.example.core.domain.model.Character
 
 data class CharacterResponse(
     @SerializedName("id")
-    val id: Int,
+    val id: String,
     @SerializedName("name")
     val name: String,
     @SerializedName("thumbnail")
