@@ -9,6 +9,8 @@ java {
 }
 
 dependencies{
+    def paging_version = "3.0.1"
+    api "androidx.paging:paging-common:$paging_version"
     api 'junit:junit:4.13.2'
     api "androidx.arch.core:core-testing:2.1.0"
     api 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.1'
